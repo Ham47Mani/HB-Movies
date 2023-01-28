@@ -22,7 +22,7 @@
   <p align="center">
     HB Movie is a simple movie website, i make this simple website as a practice for react
     <br />
-    <a href="https://ham47mani.github.io/HB-Movie/">View Demo</a>
+    <a href="https://hb-movie.netlify.app/">View Demo</a>
     ·
     <a href="https://github.com/Ham47Mani/HB-Movie/issues">Report Bug</a>
     ·
