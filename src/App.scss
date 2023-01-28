@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,600;1,700&display=swap");
+
+//------------------------- Start Global Rules -----------------------
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins", "Courier New", sans-serif;
+  background: #1e272e;
+  color: white;
+}
+a { text-decoration: none }
+ul { list-style: none }
+button {
+  background-color: #e74c3c;
+  outline: none;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  font-weight: 500;
+  font-size: 17px;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 10px;
+  &:hover { background-color: #c0392b }
+  &.primary-btn i { margin-right: 7px }
+}
+.container { max-width: 90%; margin: auto }
+.flexSB { display: flex; justify-content: space-between; align-items: center }
+.heading {
+  h1 {
+    font-weight: 600;
+    margin: 30px 0;
+    font-size: 30px;
+    letter-spacing: 1px;
+  }
+  a { 
+    color: #e74c3c;
+    transition: .3s ease-in-out;
+    &:hover {
+      color: #c0392b;
+      letter-spacing: 1px;
+    }
+  }
+}
+.padding-section {
+  padding: 70px 0;
+}
+//------------------------- End Global Rules -----------------------

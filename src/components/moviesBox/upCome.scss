@@ -1,0 +1,47 @@
+//------------------------- Start Movies Box -----------------------
+.upcome { padding: 70px 0 30px }
+.latest { padding-bottom: 70px }
+.movieBox {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  transition: .3s ease-in-out;
+  border-left: 5px solid transparent;
+  &:hover {
+    cursor: pointer;
+    border-left: 5px solid #c0392b;
+    box-shadow: 0 0 0.73em rgba(0,0, 0, .9);
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(90deg, rgba(0, 0, 0,.8) 0%, rgba(20, 20, 20,.4) 50%, rgba(83, 100, 141,.0) 100%);
+  }
+  .image {
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    img { 
+      width: 100%; height: 100%; object-fit: cover;
+    }
+  }
+  .text {
+    padding: 70px;
+    h3 {
+      font-weight: 800;
+      margin-bottom: 35px;
+      letter-spacing: 1px;
+      font-size: 22px;
+    }
+    span { color: #CCC; font-size: 16px }
+    button {
+      display: block;
+      margin-top: 15px;
+      padding: 12px 20px;
+      font-size: 13px;
+    }
+  }
+}
+//------------------------- End Movies Box -----------------------

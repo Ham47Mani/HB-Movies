@@ -1,0 +1,70 @@
+//------------------------- Start Single Page -----------------------
+body { background-color: #141414 }
+.singlePage {
+  padding: 100px 0;
+
+  //--- Single Heading
+  .singleHeading {
+    background-color: #1E272D;
+    padding: 15px 0;
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    border-top: 1px dashed #777;
+    border-bottom: 1px dashed #777;
+
+    h1 {
+      text-transform: uppercase;
+      font-size: 30px;
+    }
+    span {
+      word-spacing: 5px;
+      margin-left: 10px;
+      color: #CCC;
+      &:last-of-type { color: white; font-weight: 600 }
+    }
+  }
+  .container {
+    min-width: 80%;
+    margin: auto;
+
+    //--- Video
+    video { width: 100%; margin: 50px 0 }
+
+    h3 { font-weight: 400; margin: 20px 0; font-size: 20px; }
+    p {
+      line-height: 25px;
+      margin-top: 20px;
+      color: #BBB;
+    }
+    //--- Social
+    .social {
+      margin-top: 30px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      border-top: 1px solid #777;
+      border-bottom: 1px solid #777;
+
+      //--- Fontawesome Icons
+      .fa-brands {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        align-items: center;
+        border-radius: 50%;
+        background-color: rgba(255, 255,255, .1);
+        margin-left: 20px;
+        font-size: 20px;
+        cursor: pointer;
+        transition: .3s ease-in-out;
+        &:hover { background: var(--tooltip-color) }
+      }
+    }
+  }
+}
+
+.padding-section { padding: 0 0 100px }
+//------------------------- End Single Page -----------------------

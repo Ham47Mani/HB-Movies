@@ -1,0 +1,55 @@
+//------------------------- Start Footer -----------------------
+footer {
+  background: #191919;
+  padding: 50px 0;
+
+  //--- Container
+  .container {
+    display: grid;
+    grid-template-columns: 6fr 3fr 3fr;
+    grid-gap: 30px;
+  }
+  p { color: #AAA }
+  h3 { color: #EEE }
+  //--- List
+  ul {
+    margin-bottom: 30px;
+    width: 80%;
+    li { margin-right: 20px; cursor: pointer; color: #EEE; }
+  }
+  //--- Fontawesome icons
+  .fa-brands {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgba(255, 255,255, .1);
+    margin-right: 20px;
+    margin-top: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    &:hover { background: var(--tooltip-color) }
+  }
+  .image {
+    margin-top: 30px;
+    h5 {
+      font-size: 13px;
+    }
+  }
+}
+
+//------ Medium Screen
+@media only screen and (max-width: 991px) {
+  footer .container {
+    text-align: center;
+    .box div { justify-content: space-evenly }
+    ul { width: 100% }
+    grid-template-columns: repeat(1, 1fr);
+    .fa-brands { margin-top: 20px }
+    .image { margin-top: 20px }
+  }
+}
+//------------------------- End Footer -----------------------
