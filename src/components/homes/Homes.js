@@ -1,10 +1,11 @@
-import React, { Fragment, useState } from 'react';
+import React, { Fragment, useRef } from 'react';
 import { homeData } from '../../dummyData';
 import Home from './Home';
 import "./home.scss";
 
 const Homes = () => {
-  const [items, setItems] = useState(homeData);
+  const itemsRef = useRef(homeData);
+  const items = itemsRef.current;
   return (
     <Fragment>
       <section className='home'>
